@@ -1,0 +1,4 @@
+port_range:
+  start: 20000
+  end: 21000
+store_path: /var/lib/mcport/state.json
