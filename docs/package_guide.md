@@ -12,7 +12,17 @@ Linux環境でのdxtパッケージ生成を例に説明します。
 3. **ファイル配置**
    - `bin/` 以下にビルド成果物を配置し、設定テンプレートやドキュメントを同梱する。
 4. **dxt パッケージ生成**
-   - `dxt init` でメタデータを作成し、`dxt build` でアーカイブを生成する。
+   - `dxt init` で `dxt.yaml` を生成し、パッケージ名やバージョン、依存関係を
+     記述する。以下は最小例です。
+
+```yaml
+name: mc-port
+version: 1.0.0
+arch: amd64
+summary: dynamic port allocator
+```
+
+   - メタデータを編集後、`dxt build` を実行してアーカイブを生成する。
    - 生成されたファイルは `dist/` ディレクトリへ出力。
 5. **配布**
    - リリースノートを作成し、GitHub Releases などにアップロード。
