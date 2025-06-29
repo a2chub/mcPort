@@ -1,6 +1,7 @@
 # mcPort
 
-NCTの起動時に衝突していないポートを割り振るmcpサーバー
+MC-Port provides a lightweight daemon for dynamic port assignment and a
+simple CLI to interact with it.
 
-## ドキュメント
-詳細な設計情報は[docs/design.md](docs/design.md)を参照してください。
+The documentation for the planned API can be found in
+[docs/design.md](docs/design.md).
